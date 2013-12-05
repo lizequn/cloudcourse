@@ -11,6 +11,9 @@
     <title></title>
 </head>
 <body>
-
+  <div>
+      <a href="/login">login</a>
+      <a href="/register">register</a>
+  </div>
 </body>
 </html>

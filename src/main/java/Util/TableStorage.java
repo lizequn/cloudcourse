@@ -14,7 +14,11 @@ import java.security.InvalidKeyException;
  * Date: 04/12/13
  */
 public class TableStorage {
-    private final static String constring = "";
+
+    public static final String constring =
+            "DefaultEndpointsProtocol=http;" +
+                    "AccountName=zequnli;" +
+                    "AccountKey=QhAqhRDAj4ZiR9eHZDyxnysnv4chfUKg6pP8o35vFWN4Ki/YRRLtyQzMVMBpynkg8faL/J/9/X3bqEBtED1DfA==";
     public final static String TABLE_CUSTOMER = "Customer";
 
     public static CloudStorageAccount getAccount(){
@@ -51,7 +55,9 @@ public class TableStorage {
         }
     }
 
-
+//    public static void main(String [] args){
+//        TableStorage.createTable(TABLE_CUSTOMER);
+//    }
 
 
 
