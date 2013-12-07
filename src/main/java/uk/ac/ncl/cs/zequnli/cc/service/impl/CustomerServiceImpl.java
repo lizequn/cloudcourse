@@ -22,36 +22,37 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerDao customerDao;
 
     @Override
-    public Iterator<Customer> listCustomer() {
-//        Iterator<Customer> iterator = null;
-//        try {
-//            iterator = customerDao.getCustomers();
-//        } catch (StorageException e) {
-//            e.printStackTrace();
-//            return null;
-//        }
-//        List<Customer> list= new ArrayList<Customer>();
-//        if(null == iterator)  return null;
-//        while(iterator.hasNext()){
-//            list.add(iterator.next());
-//        }
+    public List<Customer> listCustomer() {
+        Iterator<Customer> iterator = null;
         try {
-            return customerDao.getCustomers();
+            iterator = customerDao.getCustomers();
         } catch (StorageException e) {
             e.printStackTrace();
-
             return null;
         }
+        List<Customer> list= new ArrayList<Customer>();
+        if(null == iterator)  return null;
+        while(iterator.hasNext()){
+            list.add(iterator.next());
+        }
+        return list;
+//        try {
+//            return customerDao.getCustomers();
+//        } catch (StorageException e) {
+//            e.printStackTrace();
+//
+//            return null;
+//        }
     }
 
     @Override
-    public boolean login(String email, String password, String country) {
+    public Customer login(String email, String password, String country) {
         try {
             return customerDao.checkLogin(country,email,password);
         } catch (StorageException e) {
             e.printStackTrace();
         }
-        return false;
+        return null;
     }
 
     @Override

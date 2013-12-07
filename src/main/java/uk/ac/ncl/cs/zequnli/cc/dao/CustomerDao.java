@@ -11,7 +11,7 @@ import java.util.Iterator;
  */
 public interface CustomerDao {
     void register(Customer customer) throws StorageException;
-    boolean checkLogin(String country,String email,String password) throws StorageException;
+    Customer checkLogin(String country,String email,String password) throws StorageException;
     boolean checkEmailAlreadyExist(String email) throws StorageException;
     Iterator<Customer> getCustomers() throws StorageException;
 

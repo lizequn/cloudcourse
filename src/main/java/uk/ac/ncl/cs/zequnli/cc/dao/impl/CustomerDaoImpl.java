@@ -43,18 +43,18 @@ public class CustomerDaoImpl implements CustomerDao {
 
 
     @Override
-    public boolean checkLogin(String country,String email,String password) throws StorageException {
+    public Customer checkLogin(String country,String email,String password) throws StorageException {
         CloudTableClient tableClient = TableStorage.getTableClient();
         TableOperation operation =
                 TableOperation.retrieve(country, email, Customer.class);
         Customer customer = tableClient.execute(TableStorage.TABLE_CUSTOMER,operation).getResultAsType();
         if(null == customer){
-            return false;
+            return null;
         }
         if(customer.getPassword().equals(password)){
-            return true;
+            return customer;
         }
-        return false;
+        return null;
     }
 
     @Override

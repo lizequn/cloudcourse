@@ -10,7 +10,7 @@ import java.util.List;
  * Date: 04/12/13
  */
 public interface CustomerService {
-    boolean login(String email,String password,String country);
+    Customer login(String email,String password,String country);
     boolean register(Customer customer);
-    Iterator<Customer> listCustomer();
+    List<Customer> listCustomer();
 }
