@@ -19,8 +19,8 @@ ${message}
             <f:password path="password" ></f:password>
         </div>
         <div>
-            <f:label path="country" for="country">country:</f:label>
-            <f:password path="country" ></f:password>
+            <f:label path="country">country:</f:label>
+            <f:select path="country" items="${countrylist}" />
         </div>
 
         <input type="submit">

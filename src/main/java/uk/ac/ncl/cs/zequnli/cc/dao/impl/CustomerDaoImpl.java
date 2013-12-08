@@ -1,7 +1,7 @@
 package uk.ac.ncl.cs.zequnli.cc.dao.impl;
 
 import java.util.Iterator;
-import Util.TableStorage;
+import uk.ac.ncl.cs.zequnli.cc.util.TableStorage;
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 import com.microsoft.windowsazure.services.table.client.CloudTableClient;
 import com.microsoft.windowsazure.services.table.client.TableConstants;
@@ -10,8 +10,6 @@ import com.microsoft.windowsazure.services.table.client.TableQuery;
 import org.springframework.stereotype.Repository;
 import uk.ac.ncl.cs.zequnli.cc.dao.CustomerDao;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
-
-import java.util.List;
 
 /**
  * @Auther: Li Zequn

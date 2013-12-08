@@ -19,19 +19,23 @@
             <f:password path="password" ></f:password>
             <f:errors path="password" cssClass="error"></f:errors>
         </div>
+        <%--<div>--%>
+            <%--<f:label path="country" for="country">country:</f:label>--%>
+            <%--<f:input path="country" ></f:input>--%>
+            <%--<f:errors path="country" cssClass="error"></f:errors>--%>
+        <%--</div>--%>
         <div>
-            <f:label path="country" for="country">country:</f:label>
-            <f:password path="country" ></f:password>
-            <f:errors path="country" cssClass="error"></f:errors>
+            <f:label path="country">country:</f:label>
+            <f:select path="country" items="${countrylist}" />
         </div>
         <div>
             <f:label path="firstname" for="firstname">firstname:</f:label>
-            <f:password path="firstname" ></f:password>
+            <f:input path="firstname" ></f:input>
             <f:errors path="firstname" cssClass="error"></f:errors>
         </div>
         <div>
             <f:label path="lastname" for="lastname">lastname:</f:label>
-            <f:password path="lastname" ></f:password>
+            <f:input path="lastname" ></f:input>
             <f:errors path="lastname" cssClass="error"></f:errors>
         </div>
 

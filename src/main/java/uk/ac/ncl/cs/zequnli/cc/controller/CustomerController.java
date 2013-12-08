@@ -14,6 +14,7 @@ import uk.ac.ncl.cs.zequnli.cc.model.Customer;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer4Login;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer4Register;
 import uk.ac.ncl.cs.zequnli.cc.service.CustomerService;
+import uk.ac.ncl.cs.zequnli.cc.util.Country;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -31,11 +32,13 @@ public class CustomerController {
     @RequestMapping("login.do")
     public String loginCon(Model model){
         model.addAttribute("user",new Customer4Login());
+        model.addAttribute("countrylist", Country.getAllCountry());
         return "login";
     }
     @RequestMapping("register.do")
     public String registerCon(Model model){
         model.addAttribute("user",new Customer4Register());
+        model.addAttribute("countrylist", Country.getAllCountry());
         return "register";
     }
 
