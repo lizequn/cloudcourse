@@ -7,12 +7,18 @@
     <title></title>
 </head>
 <body>
+<div>
+    <form action="orderPro.do" method="post">
+        <input type="submit"><br>
+        <c:forEach items="${productList}" var="p">
+        <div style="float: left;border: 1px solid skyblue;width: 180px;margin: 1px">
+            <h4>${p.partitionKey}---${p.productName}</h4>
+            Price:${p.price}<br/>
+            Select:<input type="radio" name="selectProduct" value="${p.rowKey}">
+        </div>
+        </c:forEach>
 
-<form:form action="order.do" method="post" commandName="product">
-  <form:select path="productIds" items="${productList}"></form:select>
-
-</form:form>
-
-
-</body>
+    </form>
+</div>
+ </body>
 </html>
