@@ -11,12 +11,16 @@ ${message}
 <div>
     <f:form action="loginPro.do" method="post"  commandName="user">
         <div>
-            <f:label for="username" path="username">Username:</f:label>
-            <f:input path="username"></f:input>
+            <f:label for="email" path="email">Username:</f:label>
+            <f:input path="email"></f:input>
         </div>
         <div>
             <f:label path="password" for="password">password:</f:label>
             <f:password path="password" ></f:password>
+        </div>
+        <div>
+            <f:label path="country" for="country">country:</f:label>
+            <f:password path="country" ></f:password>
         </div>
 
         <input type="submit">

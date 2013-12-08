@@ -8,13 +8,17 @@
 <body>
 <table>
     <thead>
-    <th>username</th>
+    <th>country</th>
+    <th>email</th>
     <th>password</th>
+    <th>name</th>
     </thead>
 <c:forEach items= "${list}" var="d">
     <tr>
-        <td>${d.username}</td>
+        <td>${d.partitionKey}</td>
+        <td>${d.rowKey}</td>
         <td>${d.password}</td>
+        <td>${d.firstname}  ${d.lastname}</td>
     </tr>
 
 </c:forEach>

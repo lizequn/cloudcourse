@@ -12,8 +12,8 @@
 </head>
 <body>
   <div>
-      <a href="/login">login</a>
-      <a href="/register">register</a>
+      <a href="/login.do">login</a>
+      <a href="/register.do">register</a>
   </div>
 </body>
 </html>

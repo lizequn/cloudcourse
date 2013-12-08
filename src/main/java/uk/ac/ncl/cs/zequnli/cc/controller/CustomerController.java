@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import uk.ac.ncl.cs.zequnli.cc.interceptor.Login;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer4Login;
+import uk.ac.ncl.cs.zequnli.cc.model.Customer4Register;
 import uk.ac.ncl.cs.zequnli.cc.service.CustomerService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,17 +30,17 @@ public class CustomerController {
 
     @RequestMapping("login.do")
     public String loginCon(Model model){
-        model.addAttribute("user",new Customer());
+        model.addAttribute("user",new Customer4Login());
         return "login";
     }
     @RequestMapping("register.do")
     public String registerCon(Model model){
-        model.addAttribute("user",new Customer());
+        model.addAttribute("user",new Customer4Register());
         return "register";
     }
 
     @RequestMapping(value = "registerPro.do" , method = RequestMethod.POST)
-    public ModelAndView registerMethod(Model model,@Valid @ModelAttribute("user") Customer user, BindingResult result){
+    public ModelAndView registerMethod(Model model,@Valid @ModelAttribute("user") Customer4Register user, BindingResult result){
         if(result.hasErrors()){
             StringBuilder sb = new StringBuilder();
             for(ObjectError oe:result.getAllErrors()){
@@ -50,7 +51,7 @@ public class CustomerController {
             return new ModelAndView("login");
         }
 
-        if(!customerservice.register(user)){
+        if(!customerservice.register(new Customer(user))){
             model.addAttribute("message","register fail");
             return new ModelAndView("error");
         }
@@ -68,12 +69,15 @@ public class CustomerController {
             model.addAttribute("message",sb.toString());
             return new ModelAndView("login");
         }
+        System.out.println("a");
         Customer customer = customerservice.login(user.getEmail(),user.getPassword(),user.getCountry());
+        System.out.println("a");
         if(null!=customer){
             request.getSession().setAttribute("login",customer);
             model.addAttribute("message","login success");
             return new ModelAndView("success");
         }
+        System.out.println("a");
         model.addAttribute("message","login failed");
         return new ModelAndView("login");
     }

@@ -15,6 +15,12 @@ public class Customer extends TableServiceEntity {
         this.partitionKey = country;
         this.rowKey = email;
     }
+    public Customer(Customer4Register register){
+        this(register.getCountry(),register.getEmail());
+        this.setFirstname(register.getFirstname());
+        this.setLastname(register.getLastname());
+        this.setPassword(register.getPassword());
+    }
 
     private String firstname;
     private String lastname;
