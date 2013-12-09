@@ -72,9 +72,7 @@ public class CustomerController {
             model.addAttribute("message",sb.toString());
             return new ModelAndView("login");
         }
-        System.out.println("a");
         Customer customer = customerservice.login(user.getEmail(),user.getPassword(),user.getCountry());
-        System.out.println("a");
         if(null!=customer){
             request.getSession().setAttribute("login",customer);
             model.addAttribute("message","login success");

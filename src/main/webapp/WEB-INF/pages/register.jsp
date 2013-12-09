@@ -42,7 +42,7 @@
 
         <input type="submit">
     </f:form>
-
+    <a href="/index.jsp">back</a>
 </div>
 
 </body>

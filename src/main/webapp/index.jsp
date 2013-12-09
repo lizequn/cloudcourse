@@ -11,7 +11,7 @@
     <title></title>
 </head>
 <body>
-  <div>
+  <div style="margin: 0 auto;text-align: center">
       <a href="/login.do">login</a>
       <a href="/register.do">register</a>
   </div>

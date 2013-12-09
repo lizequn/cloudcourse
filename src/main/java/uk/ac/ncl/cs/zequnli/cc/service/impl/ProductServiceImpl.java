@@ -19,15 +19,11 @@ import java.util.*;
 public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductDao productDao;
+
+    private static List<Product> products;
     @Override
     public Map<String,Product> getAllProductMap() {
-        Iterator<Product> iterator = null;
-        try {
-            iterator = productDao.getAllProduct();
-        } catch (StorageException e) {
-            e.printStackTrace();
-            return null;
-        }
+        Iterator<Product> iterator = getAllProduct().iterator();
         Map<String,Product> list= new HashMap<String, Product>();
         if(null == iterator)  return null;
         while(iterator.hasNext()){
@@ -39,19 +35,23 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getAllProduct() {
-        Iterator<Product> iterator = null;
-        try {
-            iterator = productDao.getAllProduct();
-        } catch (StorageException e) {
-            e.printStackTrace();
-            return null;
+        if(null == products){
+            Iterator<Product> iterator = null;
+            try {
+                iterator = productDao.getAllProduct();
+            } catch (StorageException e) {
+                e.printStackTrace();
+                return null;
+            }
+            List<Product> list= new ArrayList<Product>();
+            if(null == iterator)  return null;
+            while(iterator.hasNext()){
+                Product p = iterator.next();
+                list.add(p);
+            }
+            products = list;
+            return products;
         }
-        List<Product> list= new ArrayList<Product>();
-        if(null == iterator)  return null;
-        while(iterator.hasNext()){
-            Product p = iterator.next();
-            list.add(p);
-        }
-        return list;
+        return products;
     }
 }

@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+${message}
 <div>
     <form action="orderPro.do" method="post">
         <input type="submit"><br>

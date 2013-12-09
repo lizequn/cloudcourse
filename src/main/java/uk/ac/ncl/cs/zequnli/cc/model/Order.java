@@ -3,20 +3,30 @@ package uk.ac.ncl.cs.zequnli.cc.model;
 import com.microsoft.windowsazure.services.table.client.TableServiceEntity;
 import uk.ac.ncl.cs.zequnli.cc.util.TableStorage;
 
+import java.util.UUID;
+
 /**
  * @Auther: Li Zequn
  * Date: 08/12/13
  */
 public class Order extends TableServiceEntity {
     public Order(){}
-    public Order(String email,String SKUid){
+    public Order(String email,String id){
         this.partitionKey = email;
-        this.rowKey = SKUid;
+        this.rowKey = id;
     }
 
-
+    private String SKUid;
     private Double price;
     private String country;
+
+    public String getSKUid() {
+        return SKUid;
+    }
+
+    public void setSKUid(String SKUid) {
+        this.SKUid = SKUid;
+    }
 
     public Double getPrice() {
         return price;
@@ -33,4 +43,10 @@ public class Order extends TableServiceEntity {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public static String generateId(String email){
+       // return UUID.fromString(email +System.currentTimeMillis()).toString();
+        return email.hashCode()+""+System.currentTimeMillis();
+    }
+
 }
