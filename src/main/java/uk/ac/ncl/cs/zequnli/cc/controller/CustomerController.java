@@ -44,7 +44,7 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "registerPro.do" , method = RequestMethod.POST)
-    public ModelAndView registerMethod(Model model,@Valid @ModelAttribute("user") Customer4Register user, BindingResult result){
+    public ModelAndView registerMethod(Model model,@Valid @ModelAttribute("user") Customer4Register user, BindingResult result,HttpServletRequest request){
         if(result.hasErrors()){
             StringBuilder sb = new StringBuilder();
             for(ObjectError oe:result.getAllErrors()){
@@ -54,12 +54,17 @@ public class CustomerController {
             model.addAttribute("message",sb.toString());
             return new ModelAndView("error");
         }
-
-        if(!customerservice.register(new Customer(user))){
+        Customer customer = new Customer(user);
+        if(!customerservice.register(customer)){
             model.addAttribute("message","register fail");
             return new ModelAndView("error");
         }
-        return new ModelAndView("login");
+        if(null!=customer){
+            request.getSession().setAttribute("login",customer);
+            model.addAttribute("message","register and login success");
+            return new ModelAndView("success");
+        }
+        return new ModelAndView("error");
     }
 
     @RequestMapping(value = "loginPro.do" , method = RequestMethod.POST)
@@ -80,7 +85,7 @@ public class CustomerController {
             return new ModelAndView("success");
         }
         model.addAttribute("message","login failed");
-        return new ModelAndView("login");
+        return new ModelAndView("error");
     }
 
     @Login

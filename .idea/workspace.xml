@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e083ad-d27d-4192-a9ef-8338d6031933" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cloud.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386164824364" ignored="false" />
-    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386601968366" ignored="false" />
+    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386601974255" ignored="false" />
     <file path="/CustomerDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458292529" ignored="false" />
     <file path="/CustomerDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458302835" ignored="false" />
     <file path="/Customer.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593696961" ignored="false" />
@@ -18,7 +19,7 @@
     <file path="/Login.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386254682185" ignored="false" />
     <file path="/LoginInterceptor.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386254747764" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386254853586" ignored="false" />
-    <file path="/CustomerController.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386513685127" ignored="false" />
+    <file path="/CustomerController.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386604236492" ignored="false" />
     <file path="/Customer4Login.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386600574804" ignored="false" />
     <file path="/error.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458536908" ignored="false" />
     <file path="/fragment.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386459244317" ignored="false" />
@@ -51,7 +52,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="D:\javaProject2\Cloud" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -124,7 +125,7 @@
       <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="299" selection-end="299" vertical-scroll-proportion="-7.1923075">
+            <state line="7" column="9" selection-start="190" selection-end="195" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -139,28 +140,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="32" selection-start="2280" selection-end="2280" vertical-scroll-proportion="0.6921017">
+            <state line="74" column="32" selection-start="2280" selection-end="2280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/CustomerDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="39" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CustomerController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="19" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+            <state line="67" column="42" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.57563585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="-7.1923075">
               <folding />
             </state>
           </provider>
@@ -229,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/CustomerDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
       </list>
     </option>
   </component>
@@ -922,7 +923,11 @@
       <created>1386601970577</created>
       <updated>1386601970577</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finish v1">
+      <created>1386601978173</created>
+      <updated>1386601978173</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1033,13 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="331" selection-end="331" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="16" selection-start="331" selection-end="339" vertical-scroll-proportion="-9.153846">
@@ -1114,20 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="19" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="299" selection-end="299" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="86" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
@@ -1137,7 +1121,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="32" selection-start="2280" selection-end="2280" vertical-scroll-proportion="0.6921017">
+        <state line="74" column="32" selection-start="2280" selection-end="2280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="190" selection-end="195" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="278" selection-end="278" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="42" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.57563585">
           <folding />
         </state>
       </provider>
