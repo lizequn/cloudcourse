@@ -1,5 +1,9 @@
 package uk.ac.ncl.cs.zequnli.cc.model;
 
+import org.hibernate.validator.constraints.Email;
+
+import javax.validation.constraints.NotNull;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Zzz
@@ -8,12 +12,15 @@ package uk.ac.ncl.cs.zequnli.cc.model;
  * To change this template use File | Settings | File Templates.
  */
 public class Customer4Register {
-
+    @NotNull
     private String country;
+    @NotNull
+    @Email
     private String email;
 
     private String firstname;
     private String lastname;
+    @NotNull
     private String password;
 
     public String getCountry() {

@@ -35,6 +35,7 @@ public class CustomerController {
         model.addAttribute("countrylist", Country.getAllCountry());
         return "login";
     }
+
     @RequestMapping("register.do")
     public String registerCon(Model model){
         model.addAttribute("user",new Customer4Register());
@@ -51,14 +52,14 @@ public class CustomerController {
                 sb.append("     ");
             }
             model.addAttribute("message",sb.toString());
-            return new ModelAndView("login");
+            return new ModelAndView("error");
         }
 
         if(!customerservice.register(new Customer(user))){
             model.addAttribute("message","register fail");
             return new ModelAndView("error");
         }
-        return new ModelAndView("success");
+        return new ModelAndView("login");
     }
 
     @RequestMapping(value = "loginPro.do" , method = RequestMethod.POST)
@@ -70,7 +71,7 @@ public class CustomerController {
                 sb.append("     ");
             }
             model.addAttribute("message",sb.toString());
-            return new ModelAndView("login");
+            return new ModelAndView("error");
         }
         Customer customer = customerservice.login(user.getEmail(),user.getPassword(),user.getCountry());
         if(null!=customer){
@@ -78,7 +79,6 @@ public class CustomerController {
             model.addAttribute("message","login success");
             return new ModelAndView("success");
         }
-        System.out.println("a");
         model.addAttribute("message","login failed");
         return new ModelAndView("login");
     }

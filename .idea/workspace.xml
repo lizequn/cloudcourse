@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e083ad-d27d-4192-a9ef-8338d6031933" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/OrderService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/OrderServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/ProductServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
+      <change type="MODIFICATION" beforePath="D:\javaProject2\Cloud\src\main\java\uk\ac\ncl\cs\zequnli\cc\util\TableStorage.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cloud.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386164824364" ignored="false" />
-    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386584549791" ignored="false" />
+    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593331034" ignored="false" />
     <file path="/CustomerDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458292529" ignored="false" />
     <file path="/CustomerDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458302835" ignored="false" />
-    <file path="/Customer.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386460501273" ignored="false" />
+    <file path="/Customer.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593696961" ignored="false" />
     <file path="/TableStorage.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386588291531" ignored="false" />
     <file path="/CustomerService.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458310849" ignored="false" />
     <file path="/CustomerServiceImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458322118" ignored="false" />
@@ -32,12 +23,12 @@
     <file path="/LoginInterceptor.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386254747764" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386254853586" ignored="false" />
     <file path="/CustomerController.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386513685127" ignored="false" />
-    <file path="/Customer4Login.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386456824906" ignored="false" />
+    <file path="/Customer4Login.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386600574804" ignored="false" />
     <file path="/error.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458536908" ignored="false" />
     <file path="/fragment.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386459244317" ignored="false" />
     <file path="/login.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386459341024" ignored="false" />
     <file path="/register.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593190333" ignored="false" />
-    <file path="/Customer4Register.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386460046735" ignored="false" />
+    <file path="/Customer4Register.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386600613333" ignored="false" />
     <file path="/listUsers.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386461997357" ignored="false" />
     <file path="/Country.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386513554450" ignored="false" />
     <file path="/Products.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386514133527" ignored="false" />
@@ -118,16 +109,16 @@
       <file leaf-file-name="OrderController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="44" selection-start="2016" selection-end="2023" vertical-scroll-proportion="0.0">
+            <state line="44" column="43" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="Product.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="47" selection-start="312" selection-end="312" vertical-scroll-proportion="-8.5">
+            <state line="8" column="13" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,53 +127,75 @@
       <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-14.384615">
+            <state line="10" column="65" selection-start="279" selection-end="283" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp">
+      <file leaf-file-name="CustomerService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="272" selection-end="272" vertical-scroll-proportion="-6.5384617">
+            <state line="11" column="17" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="success.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
+      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/CustomerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="331" selection-end="331" vertical-scroll-proportion="0.34741145">
+            <state line="50" column="68" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp">
+      <file leaf-file-name="CustomerDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/CustomerDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="29" selection-start="1619" selection-end="1619" vertical-scroll-proportion="-24.846153">
+            <state line="49" column="39" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listUsers.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp">
+      <file leaf-file-name="CustomerController.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="505" selection-end="505" vertical-scroll-proportion="-15.038462">
+            <state line="85" column="32" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.65863454">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp">
+      <file leaf-file-name="Customer4Login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="14" column="47" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="4" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer4Register.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="11" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,22 +218,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
       </list>
     </option>
   </component>
@@ -914,7 +927,11 @@
       <created>1386458480127</created>
       <updated>1386458480127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish order">
+      <created>1386593335728</created>
+      <updated>1386593335728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -991,7 +1008,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish login" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish order" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1007,6 +1024,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="login control" />
     <MESSAGE value="finish login" />
+    <MESSAGE value="finish order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1016,87 +1034,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="744" selection-end="744" vertical-scroll-proportion="0.49936143">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="9" selection-start="3445" selection-end="3801" vertical-scroll-proportion="0.87142855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="20" selection-start="685" selection-end="685" vertical-scroll-proportion="0.5798212">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.20131579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="205" selection-end="205" vertical-scroll-proportion="0.17894737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="199" selection-end="199" vertical-scroll-proportion="0.17369093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="9" selection-start="2931" selection-end="2931" vertical-scroll-proportion="1.2516733">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="312" selection-end="312" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="728" selection-end="728" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="29" selection-start="1619" selection-end="1619" vertical-scroll-proportion="-24.846153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="12" selection-start="505" selection-end="505" vertical-scroll-proportion="-15.038462">
@@ -1118,16 +1055,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="44" selection-start="2016" selection-end="2023" vertical-scroll-proportion="0.0">
+        <state line="15" column="35" selection-start="331" selection-end="331" vertical-scroll-proportion="-9.807693">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="331" selection-end="331" vertical-scroll-proportion="0.34741145">
+        <state line="14" column="16" selection-start="331" selection-end="339" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="3" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="65" selection-start="279" selection-end="283" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="68" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="39" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="47" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Customer4Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="11" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="43" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="32" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.65863454">
           <folding />
         </state>
       </provider>
