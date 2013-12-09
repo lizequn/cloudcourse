@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e083ad-d27d-4192-a9ef-8338d6031933" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cloud.iml" afterPath="$PROJECT_DIR$/Cloud.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cloud.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386164824364" ignored="false" />
-    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386600847717" ignored="false" />
+    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386601968366" ignored="false" />
     <file path="/CustomerDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458292529" ignored="false" />
     <file path="/CustomerDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458302835" ignored="false" />
     <file path="/Customer.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593696961" ignored="false" />
@@ -920,7 +918,11 @@
       <created>1386600853411</created>
       <updated>1386600853411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish v1">
+      <created>1386601970577</created>
+      <updated>1386601970577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
