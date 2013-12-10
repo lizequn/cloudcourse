@@ -1,6 +1,7 @@
 package uk.ac.ncl.cs.zequnli.cc.model;
 
 import com.microsoft.windowsazure.services.table.client.TableServiceEntity;
+import org.apache.commons.lang3.RandomStringUtils;
 import uk.ac.ncl.cs.zequnli.cc.util.TableStorage;
 
 import java.util.UUID;
@@ -46,7 +47,7 @@ public class Order extends TableServiceEntity {
 
     public static String generateId(String email){
        // return UUID.fromString(email +System.currentTimeMillis()).toString();
-        return email.hashCode()+""+System.currentTimeMillis();
+        return RandomStringUtils.randomAlphabetic(6)+(email.hashCode()+System.currentTimeMillis());
     }
 
 }
