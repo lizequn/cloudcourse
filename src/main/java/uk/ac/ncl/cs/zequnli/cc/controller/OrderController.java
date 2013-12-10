@@ -42,6 +42,7 @@ public class OrderController {
             model.addAttribute("message","error in orderpro");
             return new ModelAndView("error");
         }
+
         Customer customer = (Customer)session.getAttribute("login");
         Order order = new Order(customer.getRowKey(),Order.generateId(customer.getRowKey()));
         order.setSKUid(skuId);

@@ -17,10 +17,14 @@ import java.util.Random;
  */
 public class TableStorage {
 
-    public static final String constring =
-            "DefaultEndpointsProtocol=http;" +
-                    "AccountName=zequnli;" +
-                    "AccountKey=QhAqhRDAj4ZiR9eHZDyxnysnv4chfUKg6pP8o35vFWN4Ki/YRRLtyQzMVMBpynkg8faL/J/9/X3bqEBtED1DfA==";
+//    public static final String constring =
+//            "DefaultEndpointsProtocol=http;" +
+//                    "AccountName=zequnli;" +
+//                    "AccountKey=QhAqhRDAj4ZiR9eHZDyxnysnv4chfUKg6pP8o35vFWN4Ki/YRRLtyQzMVMBpynkg8faL/J/9/X3bqEBtED1DfA==";
+public static final String constring =
+                "DefaultEndpointsProtocol=http;" +
+                    "AccountName=b3025449table;" +
+                    "AccountKey=ci3rI3OVF+TsMJ8KWxCb2HizgKMizfuB9PWTtJJQt9z28sJ9cxE0GAFAVaibSZ48ebrIlfgabxof/s99Y0KxXQ==";
     public final static String TABLE_CUSTOMER = "Customer";
     public final static String TABLE_PRODUCT = "Product";
     public final static String TABLE_ORDER = "Order";
@@ -91,15 +95,15 @@ public class TableStorage {
         }
     }
 
-//    public static void main(String [] args){
-////        TableStorage.createTable(TABLE_CUSTOMER);
-////        TableStorage.createTable(TABLE_PRODUCT);
-////        addProduct("Books",20,10.0,100.0);
-////        addProduct("Electronics",10,40.0,200.0);
-////        addProduct("Sports",10,20.0,200.0);
-////          TableStorage.createTable(TABLE_ORDER);
-//
-//    }
+    public static void main(String [] args){
+        TableStorage.createTable(TABLE_CUSTOMER);
+        TableStorage.createTable(TABLE_PRODUCT);
+        addProduct("Books",20,10.0,100.0);
+        addProduct("Electronics",10,40.0,200.0);
+        addProduct("Sports",10,20.0,200.0);
+         TableStorage.createTable(TABLE_ORDER);
+
+    }
 
 
 
