@@ -12,14 +12,14 @@ import java.util.UUID;
  */
 public class Order extends TableServiceEntity {
     public Order(){}
-    public Order(String email,String id){
-        this.partitionKey = email;
+    public Order(String country,String id){
+        this.partitionKey = country;
         this.rowKey = id;
     }
 
     private String SKUid;
     private Double price;
-    private String country;
+    private String email;
 
     public String getSKUid() {
         return SKUid;
@@ -37,12 +37,12 @@ public class Order extends TableServiceEntity {
         this.price = price;
     }
 
-    public String getCountry() {
-        return country;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public static String generateId(String email){

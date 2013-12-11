@@ -95,15 +95,15 @@ public static final String constring =
         }
     }
 
-    public static void main(String [] args){
-        TableStorage.createTable(TABLE_CUSTOMER);
-        TableStorage.createTable(TABLE_PRODUCT);
-        addProduct("Books",20,10.0,100.0);
-        addProduct("Electronics",10,40.0,200.0);
-        addProduct("Sports",10,20.0,200.0);
-         TableStorage.createTable(TABLE_ORDER);
-
-    }
+//    public static void main(String [] args){
+//        TableStorage.createTable(TABLE_CUSTOMER);
+//        TableStorage.createTable(TABLE_PRODUCT);
+//        addProduct("Books",20,10.0,100.0);
+//        addProduct("Electronics",10,40.0,200.0);
+//        addProduct("Sports",10,20.0,200.0);
+//         TableStorage.createTable(TABLE_ORDER);
+//
+//    }
 
 
 

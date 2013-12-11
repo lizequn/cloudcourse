@@ -8,6 +8,8 @@ import uk.ac.ncl.cs.zequnli.cc.dao.OrderDao;
 import uk.ac.ncl.cs.zequnli.cc.model.Order;
 import uk.ac.ncl.cs.zequnli.cc.util.TableStorage;
 
+import java.util.Map;
+
 /**
  * @Auther: Li Zequn
  * Date: 09/12/13
@@ -21,4 +23,9 @@ public class OrderDaoImpl implements OrderDao {
         CloudTableClient tableClient = TableStorage.getTableClient();
         tableClient.execute(TableStorage.TABLE_ORDER,operation);
     }
+
+//    @Override
+//    public Map<String, Integer> getTotalOrderByCountry(String countryName) {
+//
+//    }
 }

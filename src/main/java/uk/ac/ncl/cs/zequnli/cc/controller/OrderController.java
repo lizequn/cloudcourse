@@ -44,10 +44,10 @@ public class OrderController {
         }
 
         Customer customer = (Customer)session.getAttribute("login");
-        Order order = new Order(customer.getRowKey(),Order.generateId(customer.getRowKey()));
+        Order order = new Order(customer.getPartitionKey(),Order.generateId(customer.getRowKey()));
         order.setSKUid(skuId);
         order.setPrice(productService.getAllProductMap().get(skuId).getPrice());
-        order.setCountry(customer.getPartitionKey());
+        order.setEmail(customer.getRowKey());
         if(orderService.createOrder(order)){
             model.addAttribute("message","success create order");
             return new ModelAndView("success");

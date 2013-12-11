@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e083ad-d27d-4192-a9ef-8338d6031933" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/JoinController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="D:\javaProject2\Cloud\src\main\java\uk\ac\ncl\cs\zequnli\cc\util\TableStorage.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Cloud.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386164824364" ignored="false" />
-    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386687812087" ignored="false" />
+    <file path="/Dummy.txt" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386756861075" ignored="false" />
     <file path="/CustomerDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458292529" ignored="false" />
     <file path="/CustomerDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386458302835" ignored="false" />
     <file path="/Customer.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593696961" ignored="false" />
@@ -31,14 +35,14 @@
     <file path="/Products.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386514133527" ignored="false" />
     <file path="/Product.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386523976646" ignored="false" />
     <file path="/ProductDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386521207037" ignored="false" />
-    <file path="/Order.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386681362079" ignored="false" />
+    <file path="/Order.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386758017394" ignored="false" />
     <file path="/ProductDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386521106394" ignored="false" />
     <file path="/ProductService.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386524237444" ignored="false" />
     <file path="/ProductServiceImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386584968389" ignored="false" />
-    <file path="/OrderController.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386685676159" ignored="false" />
+    <file path="/OrderController.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386758053669" ignored="false" />
     <file path="/order.jsp" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386593225070" ignored="false" />
     <file path="/Order4handle.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386525626020" ignored="false" />
-    <file path="/OrderDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386585022767" ignored="false" />
+    <file path="/OrderDao.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386757888278" ignored="false" />
     <file path="/OrderDaoImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386585295987" ignored="false" />
     <file path="/OrderService.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386585839000" ignored="false" />
     <file path="/OrderServiceImpl.java" changelist="e3e083ad-d27d-4192-a9ef-8338d6031933" time="1386585852313" ignored="false" />
@@ -60,7 +64,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -97,6 +100,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,7 +109,83 @@
     <favorites_list name="Cloud" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="OrderDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="6" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="5" selection-start="878" selection-end="978" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="30" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="300" selection-end="308" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="38" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="58" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="6" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data4Jmeter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/Data4Jmeter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3246#3255#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -123,8 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/order.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
@@ -135,10 +213,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/Data4Jmeter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/JoinController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/TableStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java" />
       </list>
     </option>
   </component>
@@ -403,6 +483,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -493,14 +607,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,10 +665,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -598,19 +747,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -637,6 +773,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -817,12 +966,16 @@
       <created>1386687815444</created>
       <updated>1386687815444</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change to key">
+      <created>1386699748177</created>
+      <updated>1386699748177</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="562" y="78" width="1489" height="1241" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -835,7 +988,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -844,11 +996,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2477193" sideWeight="0.75605214" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24394786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24394786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298279" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -926,51 +1079,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/ProductDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="1181" selection-end="1646" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="13" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="34" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="27" selection-start="2218" selection-end="2233" vertical-scroll-proportion="0.4539559">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="300" selection-end="308" vertical-scroll-proportion="0.22339028">
           <folding />
         </state>
       </provider>
@@ -1010,13 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="8" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/JoinController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="5" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
@@ -1031,9 +1135,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="6" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="300" selection-end="308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="30" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="58" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/impl/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="878" selection-end="978" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/Data4Jmeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="1322" selection-end="1339" vertical-scroll-proportion="0.8158236">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3246#3255#0" expanded="true" />
