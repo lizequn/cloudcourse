@@ -3,6 +3,7 @@ package uk.ac.ncl.cs.zequnli.cc.dao;
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
 
+import java.net.URISyntaxException;
 import java.util.Iterator;
 
 /**
@@ -14,6 +15,6 @@ public interface CustomerDao {
     Customer checkLogin(String country,String email,String password) throws StorageException;
     boolean checkEmailAlreadyExist(String email) throws StorageException;
     Iterator<Customer> getCustomers() throws StorageException;
-
+    Customer getCustomerByEmailCountry(String Country,String email) throws URISyntaxException, StorageException;
 
 }

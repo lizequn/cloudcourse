@@ -11,6 +11,7 @@ import java.util.Map;
  */
 public interface OrderDao {
     void createOrder(Order order) throws StorageException;
-//    Map<String,Integer> getTotalOrderByCountry(String countryName);
+    Map<String,Double> getTotalOrderByCountry(String countryName);
+    Long getTotalNum();
 
 }

@@ -1,12 +1,11 @@
 package uk.ac.ncl.cs.zequnli.cc.dao.impl;
 
+import java.net.URISyntaxException;
 import java.util.Iterator;
+
+import com.microsoft.windowsazure.services.table.client.*;
 import uk.ac.ncl.cs.zequnli.cc.util.TableStorage;
 import com.microsoft.windowsazure.services.core.storage.StorageException;
-import com.microsoft.windowsazure.services.table.client.CloudTableClient;
-import com.microsoft.windowsazure.services.table.client.TableConstants;
-import com.microsoft.windowsazure.services.table.client.TableOperation;
-import com.microsoft.windowsazure.services.table.client.TableQuery;
 import org.springframework.stereotype.Repository;
 import uk.ac.ncl.cs.zequnli.cc.dao.CustomerDao;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
@@ -60,5 +59,13 @@ public class CustomerDaoImpl implements CustomerDao {
         CloudTableClient tableClient = TableStorage.getTableClient();
         TableQuery<Customer> query = TableQuery.from(TableStorage.TABLE_CUSTOMER,Customer.class);
         return tableClient.execute(query).iterator();
+    }
+
+    @Override
+    public Customer getCustomerByEmailCountry(String Country, String email) throws URISyntaxException, StorageException {
+        CloudTableClient tableClient = TableStorage.getTableClient();
+        TableOperation retrieveOperation = TableOperation.retrieve(Country, email,Customer.class);
+        Customer customer = tableClient.execute(TableStorage.TABLE_CUSTOMER,retrieveOperation).getResultAsType();
+        return customer;
     }
 }

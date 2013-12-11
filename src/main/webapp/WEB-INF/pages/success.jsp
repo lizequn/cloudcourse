@@ -10,6 +10,8 @@
     <p>${message}</p>
    <a href = "/list.do">list all users</a>
    <a href="/order.do">buy</a>
+   <a href="/getTotal.do">getTotalByCountry</a>
+   <a href="/listAll.do">get total number</a>
    </div>
 <a href="/">back</a>
 </body>
