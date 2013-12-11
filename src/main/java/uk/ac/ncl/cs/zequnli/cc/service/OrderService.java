@@ -3,8 +3,10 @@ package uk.ac.ncl.cs.zequnli.cc.service;
 import com.microsoft.windowsazure.services.core.storage.StorageException;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
 import uk.ac.ncl.cs.zequnli.cc.model.Order;
+import uk.ac.ncl.cs.zequnli.cc.model.Order4CSV;
 
 import java.net.URISyntaxException;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -15,5 +17,5 @@ public interface OrderService {
     boolean createOrder(Order order);
     Map<Customer,Double> getTotalOrderByCountry(String country) throws URISyntaxException, StorageException;
     Long getTotalOrder();
-
+    Iterator<Order4CSV> getAllOrder();
 }

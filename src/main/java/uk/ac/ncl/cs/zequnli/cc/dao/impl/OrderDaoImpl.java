@@ -73,4 +73,12 @@ public class OrderDaoImpl implements OrderDao {
         }
         return i;
     }
+
+    @Override
+    public Iterator<Order> getAllOrders() {
+        CloudTableClient tableClient = TableStorage.getTableClient();
+        TableQuery<Order> partitionQuery =
+                TableQuery.from(TableStorage.TABLE_ORDER, Order.class);
+        return tableClient.execute(partitionQuery).iterator();
+    }
 }

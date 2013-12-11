@@ -7,12 +7,12 @@ import uk.ac.ncl.cs.zequnli.cc.dao.CustomerDao;
 import uk.ac.ncl.cs.zequnli.cc.dao.OrderDao;
 import uk.ac.ncl.cs.zequnli.cc.model.Customer;
 import uk.ac.ncl.cs.zequnli.cc.model.Order;
+import uk.ac.ncl.cs.zequnli.cc.model.Order4CSV;
 import uk.ac.ncl.cs.zequnli.cc.service.OrderService;
 
 import java.net.URISyntaxException;
 import java.text.DecimalFormat;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Auther: Li Zequn
@@ -53,5 +53,15 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Long getTotalOrder() {
         return orderDao.getTotalNum();
+    }
+
+    @Override
+    public Iterator<Order4CSV> getAllOrder() {
+        Iterator<Order> i =orderDao.getAllOrders();
+        List<Order4CSV> list = new ArrayList<Order4CSV>();
+        while (i.hasNext()){
+            list.add(new Order4CSV(i.next()));
+        }
+        return list.iterator();
     }
 }
