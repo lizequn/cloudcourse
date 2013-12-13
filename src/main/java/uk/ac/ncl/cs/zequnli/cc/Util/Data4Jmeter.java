@@ -92,7 +92,7 @@ public class Data4Jmeter {
         int max = list.size();
         int i = 0;
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter("D://products.csv"));
+            PrintWriter pw = new  PrintWriter(new FileWriter("D://products.csv"));
             while(i<1000000){
                 i++;
                 Product p = list.get(random.nextInt(max));
